@@ -1,0 +1,101 @@
+# PraetorX — Odoo 19 Module Suite
+
+> Professional Odoo 19 modules by Syntax & Sabotage. AI-powered invoicing, document management, BPMN process design, and enterprise cloud integrations.
+
+## Company
+
+- Name: Syntax & Sabotage
+- Author: Lars Weiler
+- Website: https://syntaxandsabotage.io
+- Support: support@syntaxandsabotage.io
+- Product site: https://praetorx.net
+- App Store: https://apps.odoo.com/apps/modules/browse?author=Syntax+%26+Sabotage
+
+## Modules (Paid)
+
+### Vault — 199 EUR
+Intelligent document management with AI classification, routing, OCR, retention policies, and ISO 27001 security levels.
+- Technical: praetorx_vault
+- App Store: https://apps.odoo.com/apps/modules/19.0/praetorx_vault/
+- Depends: foundation, documents, mail
+
+### SharePoint Sync — 99 EUR
+Bidirectional sync between Odoo Documents and SharePoint/OneDrive via Microsoft Graph API.
+- Technical: sharepoint_sync
+- App Store: https://apps.odoo.com/apps/modules/19.0/sharepoint_sync/
+- Depends: base, documents, mail, praetorx_base
+
+### Nextcloud Sync — 99 EUR
+Bidirectional sync between Odoo Documents and Nextcloud. Libraries, folders, and files.
+- Technical: praetorx_nextcloud_sync
+- App Store: https://apps.odoo.com/apps/modules/19.0/praetorx_nextcloud_sync/
+- Depends: base, documents, mail, praetorx_base
+
+### FlowForge Engine — 99 EUR
+BPMN execution engine. Tasks, timers, gateways, and events as Odoo actions.
+- Technical: praetorx_flowforge_engine
+- App Store: https://apps.odoo.com/apps/modules/19.0/praetorx_flowforge_engine/
+- Depends: praetorx_flowforge, praetorx_base, portal
+
+### MCP Security — 79 EUR
+Model Context Protocol security and access control for AI-powered Odoo integrations.
+- Technical: praetorx_security
+- App Store: https://apps.odoo.com/apps/modules/19.0/praetorx_security/
+- Depends: base, mail, rpc
+
+### Invoice Pro — 49 EUR
+AI-powered invoice processing with automatic data extraction, validation, and Odoo Accounting integration.
+- Technical: invoice_pro
+- App Store: https://apps.odoo.com/apps/modules/19.0/invoice_pro/
+- Depends: base, mail, account, web, portal, account_accountant
+
+### FlowForge — 49 EUR
+BPMN 2.0 process designer with visual form builder.
+- Technical: praetorx_flowforge
+- App Store: https://apps.odoo.com/apps/modules/19.0/praetorx_flowforge/
+- Depends: base, web, mail
+
+### Mimik Ingest — 49 EUR
+SharePoint API compatible endpoint for scanners. Captures documents directly into Odoo.
+- Technical: nexumis_mimik_ingest
+- App Store: https://apps.odoo.com/apps/modules/19.0/nexumis_mimik_ingest/
+- Depends: praetorx_vault, documents
+
+## Modules (Free)
+
+### Foundation — Free
+Core services: unified AI providers (OpenAI, Claude, Azure), configuration, health monitoring, security framework.
+- Technical: foundation
+- Depends: base, mail
+
+### PraetorX Base — Free
+Queue jobs, validation framework, batch processing. Shared infrastructure for integration modules.
+- Technical: praetorx_base
+- Depends: base, mail, web
+
+### Scribe — Free
+Markdown-to-HTML conversion for any Odoo HTML field. Powerbox command, live preview, GitHub Flavored Markdown.
+- Technical: scribe
+- Depends: web, html_editor
+
+### FlowForge Knowledge — Free
+Embed BPMN diagrams in Odoo Knowledge articles.
+- Technical: praetorx_flowforge_knowledge
+- Depends: praetorx_flowforge, knowledge
+
+## Compliance
+
+- ISO 27001 compliant
+- DSGVO (GDPR) compliant
+- GoBD compliant
+- 100% Odoo-native (ORM only, no raw SQL)
+
+## Technical
+
+- Platform: Odoo 19 Enterprise
+- License: OPL-1 (paid), LGPL-3 (free)
+- Language: Python, JavaScript (OWL), XML, SCSS
+
+## Optional: llms-full.txt
+
+For the complete module catalog with detailed feature lists, see: https://praetorx.net/llms-full.txt
