@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MCP Security — Sicherheit und Zugangskontrolle für Model Context Protocol-Integrationen in Odoo 19">
+  <title>MCP Security — PraetorX</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">PRAETORX</a>
+      <button class="menu-toggle" aria-label="Menü öffnen" aria-expanded="false">&#9776;</button>
+      <nav aria-label="Hauptnavigation">
+        <a href="index.html">Startseite</a>
+        <a href="modules.html">Module</a>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <div class="lang-toggle">
+          <button class="lang-btn active" data-lang="de" aria-label="Deutsch">DE</button>
+          <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="detail-hero">
+        <img src="assets/images/icon_mcp_security.png" alt="MCP Security" class="detail-hero-icon">
+        <div class="detail-hero-text">
+          <h1>MCP Security</h1>
+          <div class="detail-meta">
+            <span class="badge badge-price">79 EUR</span>
+            <span class="badge badge-tier">Professional</span>
+            <span class="badge" style="background:rgba(255,255,255,0.08);color:#888">v19.0.1.2.1</span>
+            <span class="badge" style="background:rgba(255,255,255,0.08);color:#888">OPL-1</span>
+          </div>
+          <p class="subtitle">Sicherheit und Zugangskontrolle für Model Context Protocol-Integrationen. API-Schlüsselverwaltung, Audit-Protokollierung, IP-Whitelisting und Rate-Limiting für den dedizierten MCP-Endpunkt.</p>
+          <div class="detail-actions">
+            <a href="https://apps.odoo.com/apps/modules/19.0/praetorx_security/" class="btn btn-primary" target="_blank" rel="noopener">Im Odoo App Store</a>
+            <a href="modules.html" class="btn btn-outline">Alle Module</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="container">
+      <div class="detail-section">
+        <h2>Funktionen</h2>
+        <div class="feature-grid">
+          <div class="feature-item">
+            <h4>API-Schlüsselverwaltung</h4>
+            <p>PraetorX-spezifische API-Schlüssel mit Ablaufdatum und Bereichseinschränkungen. Vier vordefinierte Operationsscopes: Lesen, Schreiben, Erstellen, Löschen. Notfall-Massenrevokation per Assistent:in.</p>
+          </div>
+          <div class="feature-item">
+            <h4>Audit-Protokollierung</h4>
+            <p>Vollständige Protokollierung aller PraetorX-Operationen mit Nutzer:in, Zeitstempel, Modell, Methode und Ergebnis. Export als CSV oder JSON mit Datumsbereichsfilter per Direktdownload.</p>
+          </div>
+          <div class="feature-item">
+            <h4>IP-Whitelisting</h4>
+            <p>IPv4- und IPv6-Unterstützung mit CIDR-Notation (z.B. 192.168.1.0/24). Client-IP-Extraktion mit X-Forwarded-For-Unterstützung. Validierung über Python ipaddress-Modul.</p>
+          </div>
+          <div class="feature-item">
+            <h4>Rate-Limiting</h4>
+            <p>In-Memory-Sliding-Window-Rate-Limiter mit 60-Sekunden-Fenster. Konfigurierbare maximale Anfragen pro Minute pro API-Schlüssel. HTTP 429-Antworten mit Rate-Limit-Headern.</p>
+          </div>
+          <div class="feature-item">
+            <h4>Sicherheitswarnungen &amp; Monitoring</h4>
+            <p>Automatische Warnungen bei fehlgeschlagenen Authentifizierungen (schwellenwertbasiert). Schweregrade: kritisch, hoch, mittel, niedrig. E-Mail-Benachrichtigungen mit Detailinformationen. Mail-Thread-Integration.</p>
+          </div>
+          <div class="feature-item">
+            <h4>Automatische Schlüsselrotation</h4>
+            <p>Täglicher Hintergrundauftrag prüft ablaufende Schlüssel. Automatische Schlüsselgenerierung innerhalb des Rotationsfensters. E-Mail-Benachrichtigung an betroffene Nutzer:innen. Im Konfigurationsbereich aktivierbar.</p>
+          </div>
+          <div class="feature-item">
+            <h4>Sitzungsverwaltung</h4>
+            <p>Verfolgung aktiver PraetorX-Sitzungen mit konfigurierbarem Timeout und Limit für gleichzeitige Sitzungen pro API-Schlüssel. Automatische Bereinigung abgelaufener und inaktiver Sitzungen.</p>
+          </div>
+          <div class="feature-item">
+            <h4>Dedizierter MCP-Endpunkt</h4>
+            <p>Eigener /xmlrpc/2/mcp-Endpunkt mit selektiver Durchsetzung. Zusätzliche Sicherheitsebene ergänzend zu Odoos Standard-Sicherheit (ir.model.access, ir.rule).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="detail-section">
+        <h2>Technische Details</h2>
+        <div class="detail-specs">
+          <div class="spec-item">
+            <div class="spec-label">Version</div>
+            <div class="spec-value">19.0.1.2.1</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Odoo</div>
+            <div class="spec-value">19.0</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Lizenz</div>
+            <div class="spec-value">OPL-1</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Preis</div>
+            <div class="spec-value">79 EUR</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Abhängigkeiten</div>
+            <div class="spec-value">base, mail, rpc</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Anbieter</div>
+            <div class="spec-value">Syntax &amp; Sabotage</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="container">
+      <div class="detail-section">
+        <h2>Ergänzende Module</h2>
+        <div class="companion-grid">
+          <a href="foundation.html" class="companion-card">
+            <h4>Foundation</h4>
+            <p>Kern-Services-Schicht mit AI-Provider-Verwaltung und Sicherheitsmustern</p>
+          </a>
+          <a href="praetorx-base.html" class="companion-card">
+            <h4>PraetorX Base</h4>
+            <p>Queue-Jobs, Validierungs-Mixins und Batch-Processing — kostenlos</p>
+          </a>
+          <a href="modules.html#vault" class="companion-card">
+            <h4>Vault</h4>
+            <p>KI-gestützte Dokumentenverwaltung mit gesichertem Zugang</p>
+          </a>
+          <a href="modules.html#sharepoint-sync" class="companion-card">
+            <h4>SharePoint Sync</h4>
+            <p>Sichere SharePoint-Integration mit API-Schlüsselbasierter Authentifizierung</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-brand-name">PRAETORX</div>
+          <p>Enterprise Module Suite für Odoo 19</p>
+        </div>
+        <div>
+          <h4>Module</h4>
+          <ul>
+            <li><a href="modules.html#vault">Vault</a></li>
+            <li><a href="modules.html#invoice-pro">Invoice Pro</a></li>
+            <li><a href="modules.html#sharepoint-sync">SharePoint Sync</a></li>
+            <li><a href="modules.html#flowforge">FlowForge</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Rechtliches</h4>
+          <ul>
+            <li><a href="impressum.html">Impressum</a></li>
+            <li><a href="datenschutz.html">Datenschutz</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 PraetorX</span>
+        <span class="footer-built">Entwickelt von <a href="https://syntaxandsabotage.io" target="_blank" rel="noopener">Syntax &amp; Sabotage</a></span>
+      </div>
+    </div>
+  </footer>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

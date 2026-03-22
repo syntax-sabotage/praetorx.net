@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SharePoint Sync — Bidirektionale Dokumentensynchronisation zwischen Odoo 19 und Microsoft SharePoint mit Enterprise-Konfliktverwaltung und vollständigem Audit-Trail.">
+  <title>SharePoint Sync — PraetorX</title>
+
+  <link rel="canonical" href="https://praetorx.net/sharepoint-sync.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="PraetorX">
+  <meta property="og:title" content="SharePoint Sync — Odoo 19 ↔ Microsoft SharePoint">
+  <meta property="og:description" content="Enterprise-Synchronisation zwischen Odoo Documents und SharePoint mit 5 Konfliktrichtlinien, Webhooks und vollständigem Audit-Log.">
+  <meta property="og:url" content="https://praetorx.net/sharepoint-sync.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">PRAETORX</a>
+      <button class="menu-toggle" aria-label="Menü öffnen" aria-expanded="false">&#9776;</button>
+      <nav aria-label="Hauptnavigation">
+        <a href="index.html">Startseite</a>
+        <a href="modules.html" class="active">Module</a>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <div class="lang-toggle">
+          <button class="lang-btn active" data-lang="de" aria-label="Deutsch">DE</button>
+          <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Detail Hero -->
+  <section>
+    <div class="container">
+      <div class="detail-hero">
+        <img src="assets/images/icon_sharepoint_sync.png" alt="SharePoint Sync" class="detail-hero-icon">
+        <div class="detail-hero-text">
+          <h1>SharePoint Sync</h1>
+          <div class="detail-meta">
+            <span class="badge badge-price">99 EUR</span>
+            <span class="badge badge-tier">Professional</span>
+            <span class="badge" style="background:rgba(255,255,255,0.08);color:var(--text-muted)">v19.0.1.4.0</span>
+            <span class="badge" style="background:rgba(255,255,255,0.08);color:var(--text-muted)">OPL-1</span>
+          </div>
+          <p class="subtitle">Bidirektionale Dokumentensynchronisation zwischen Odoo 19 und Microsoft SharePoint — mit Enterprise-Konfliktverwaltung und vollständigem Audit-Trail. Änderungen in Odoo propagieren nach SharePoint, Änderungen in SharePoint propagieren zurück — automatisch, nach konfigurierbarem Zeitplan.</p>
+          <div class="detail-actions">
+            <a href="https://apps.odoo.com/apps/modules/19.0/sharepoint_sync/" class="btn btn-primary" target="_blank" rel="noopener">Im Odoo App Store</a>
+            <a href="modules.html" class="btn btn-outline">Alle Module</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="alt">
+    <div class="container">
+      <div class="detail-section">
+        <h2>Funktionen</h2>
+        <div class="feature-grid">
+          <div class="feature-item">
+            <h4>Echte bidirektionale Synchronisation</h4>
+            <p>Änderungen in Odoo propagieren nach SharePoint und umgekehrt — automatisch, nach konfigurierbarem Zeitplan zwischen 5 und 240 Minuten.</p>
+          </div>
+          <div class="feature-item">
+            <h4>5 Konfliktrichtlinien</h4>
+            <p>Manuelle Auflösung, Neueste gewinnt, Odoo hat Vorrang, SharePoint hat Vorrang oder Beide Kopien behalten. Konflikte im Stapel per Wizard auflösen.</p>
+          </div>
+          <div class="feature-item">
+            <h4>Echtzeit-Webhooks</h4>
+            <p>Microsoft Graph Webhook-Subscriptions senden Änderungsbenachrichtigungen sofort. Kein Polling erforderlich — automatischer Fallback auf planmäßige Synchronisation wenn Webhooks nicht verfügbar sind.</p>
+          </div>
+          <div class="feature-item">
+            <h4>Vollständiges Audit-Log</h4>
+            <p>Jeder Upload, Download, Konflikt, jede Auflösung und jeder Fehler wird mit Metadaten-Snapshots protokolliert. Tägliche automatische Bereinigung hält den Speicher unter Kontrolle.</p>
+          </div>
+          <div class="feature-item">
+            <h4>Intelligentes Workspace-Mapping</h4>
+            <p>Odoo-Dokumenten-Workspaces werden SharePoint-Bibliotheken durch automatische Erkennung zugeordnet. Der Browser für Microsoft 365-Mandanten präsentiert verfügbare Bibliotheken — keine manuelle URL-Eingabe erforderlich.</p>
+          </div>
+          <div class="feature-item">
+            <h4>Enterprise-Sicherheit</h4>
+            <p>OAuth2 über Microsoft Graph API. Client-Secrets und Tokens werden verschlüsselt gespeichert. Webhook-Signaturen werden per HMAC-SHA256 verifiziert. IP-Whitelist und Rate Limiting inklusive.</p>
+          </div>
+          <div class="feature-item">
+            <h4>Workspace-Dashboard</h4>
+            <p>Stat-Buttons für synchronisierte, ausstehende, konfliktbehaftete, fehlgeschlagene und unter Quarantäne gestellte Dokumente — mit gefilterten Ansichten.</p>
+          </div>
+          <div class="feature-item">
+            <h4>Löschrichtlinien</h4>
+            <p>Separate konfigurierbare Richtlinien für Remote-Löschungen und lokale Löschungen. Dokumente können unter Quarantäne gestellt, archiviert, gelöscht oder ignoriert werden.</p>
+          </div>
+          <div class="feature-item">
+            <h4>Ruhezeitfenster</h4>
+            <p>Dateien, die innerhalb eines konfigurierbaren Zeitfensters (Standard: 30 Sekunden) geändert wurden, werden übersprungen — verhindert Konflikte durch unvollständige Schreibvorgänge.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Specs -->
+  <section>
+    <div class="container">
+      <div class="detail-section">
+        <h2>Technische Details</h2>
+        <div class="detail-specs">
+          <div class="spec-item">
+            <div class="spec-label">Version</div>
+            <div class="spec-value">19.0.1.4.0</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Lizenz</div>
+            <div class="spec-value">OPL-1</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Preis</div>
+            <div class="spec-value">99 EUR</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Odoo</div>
+            <div class="spec-value">19.0</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Abhängigkeiten</div>
+            <div class="spec-value">base, documents, mail, praetorx_base</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Kategorie</div>
+            <div class="spec-value">Documents</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Companion Modules -->
+  <section class="alt">
+    <div class="container">
+      <div class="detail-section">
+        <h2>Ergänzende Module</h2>
+        <div class="companion-grid">
+          <a href="vault.html" class="companion-card">
+            <h4>Vault</h4>
+            <p>KI-DMS als Dokumentenbasis — klassifizieren, dann mit SharePoint synchronisieren.</p>
+          </a>
+          <a href="nextcloud-sync.html" class="companion-card">
+            <h4>Nextcloud Sync</h4>
+            <p>Für Teams, die Open-Source-Cloud-Speicher bevorzugen.</p>
+          </a>
+          <a href="mimik-ingest.html" class="companion-card">
+            <h4>Mimik Ingest</h4>
+            <p>Gescannte Dokumente landen direkt in Odoo — bereit zur SharePoint-Synchronisation.</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-brand-name">PRAETORX</div>
+          <p>Enterprise Module Suite für Odoo 19</p>
+        </div>
+        <div>
+          <h4>Module</h4>
+          <ul>
+            <li><a href="vault.html">Vault</a></li>
+            <li><a href="invoice-pro.html">Invoice Pro</a></li>
+            <li><a href="sharepoint-sync.html">SharePoint Sync</a></li>
+            <li><a href="flowforge.html">FlowForge</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Rechtliches</h4>
+          <ul>
+            <li><a href="impressum.html">Impressum</a></li>
+            <li><a href="datenschutz.html">Datenschutz</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 PraetorX</span>
+        <span class="footer-built">Entwickelt von <a href="https://syntaxandsabotage.io" target="_blank" rel="noopener">Syntax &amp; Sabotage</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

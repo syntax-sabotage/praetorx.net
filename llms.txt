@@ -31,7 +31,7 @@ Bidirectional sync between Odoo Documents and Nextcloud. Libraries, folders, and
 - App Store: https://apps.odoo.com/apps/modules/19.0/praetorx_nextcloud_sync/
 - Depends: base, documents, mail, praetorx_base
 
-### FlowForge Engine — 99 EUR
+### FlowForge Engine — 148 EUR
 BPMN execution engine. Tasks, timers, gateways, and events as Odoo actions.
 - Technical: praetorx_flowforge_engine
 - App Store: https://apps.odoo.com/apps/modules/19.0/praetorx_flowforge_engine/
@@ -55,7 +55,7 @@ BPMN 2.0 process designer with visual form builder.
 - App Store: https://apps.odoo.com/apps/modules/19.0/praetorx_flowforge/
 - Depends: base, web, mail
 
-### Mimik Ingest — 49 EUR
+### Mimik Ingest — 248 EUR
 SharePoint API compatible endpoint for scanners. Captures documents directly into Odoo.
 - Technical: nexumis_mimik_ingest
 - App Store: https://apps.odoo.com/apps/modules/19.0/nexumis_mimik_ingest/

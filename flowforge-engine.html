@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PraetorX FlowForge Engine — BPMN-Ausführungsengine für Prozessautomatisierung in Odoo 19">
+  <title>FlowForge Engine — PraetorX</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">PRAETORX</a>
+      <button class="menu-toggle" aria-label="Menü öffnen" aria-expanded="false">&#9776;</button>
+      <nav aria-label="Hauptnavigation">
+        <a href="index.html">Startseite</a>
+        <a href="modules.html">Module</a>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <div class="lang-toggle">
+          <button class="lang-btn active" data-lang="de" aria-label="Deutsch">DE</button>
+          <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="detail-hero">
+        <img src="assets/images/icon_flowforge_engine.png" alt="FlowForge Engine" class="detail-hero-icon">
+        <div class="detail-hero-text">
+          <h1>FlowForge Engine</h1>
+          <div class="detail-meta">
+            <span class="badge badge-price">148 EUR</span>
+            <span class="badge badge-tier">Premium</span>
+            <span class="badge" style="background:rgba(255,255,255,0.08);color:#888">v19.0.1.0.0</span>
+            <span class="badge" style="background:rgba(255,255,255,0.08);color:#888">OPL-1</span>
+          </div>
+          <p class="subtitle">Verwandelt FlowForge vom Diagramm-Tool in eine vollwertige Prozessautomatisierungsplattform. BPMN 2.0-Prozesse werden direkt in Odoo ausgeführt — mit Aufgaben-Inbox, Service-Tasks und Portal-Zugang für externe Personen.</p>
+          <div class="detail-actions">
+            <a href="https://apps.odoo.com/apps/modules/19.0/praetorx_flowforge_engine/" class="btn btn-primary" target="_blank" rel="noopener">Im Odoo App Store</a>
+            <a href="modules.html" class="btn btn-outline">Alle Module</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="container">
+      <div class="detail-section">
+        <h2>Funktionen</h2>
+        <div class="feature-grid">
+          <div class="feature-item">
+            <h4>BPMN 2.0 XML-Parser</h4>
+            <p>Extrahiert Prozessgraphen aus BPMN 2.0 XML. Unterstützt Namespace-Varianten (bpmn:, bpmn2:, Standard), ConditionExpression und Gateway-Default-Attribute.</p>
+          </div>
+          <div class="feature-item">
+            <h4>Token-basierte Ausführungsengine</h4>
+            <p>Iterative Token-Weiterleitung mit 500-Schritt-Sicherheitslimit. Queue-basiert über praetorx.queue.job. Token-Status: aktiv, wartend, abgeschlossen, Fehler, abgebrochen.</p>
+          </div>
+          <div class="feature-item">
+            <h4>Aufgaben-Inbox</h4>
+            <p>UserTask-Inbox mit Mail-Thread-Integration und Systray-Aktivitätsbadges. Formular-Einreichung speichert Prozessvariablen. Unterstützt Neuzuweisung und Queue-Job-Wiederaufnahme.</p>
+          </div>
+          <div class="feature-item">
+            <h4>Dynamischer Formular-Renderer</h4>
+            <p>OWL-Komponente rendert 9 Feldtypen: Text, Textarea, Integer, Float, Datum, Datum+Uhrzeit, Boolean, Auswahl, Many2one. Pflichtfeldvalidierung mit deutschen Labels.</p>
+          </div>
+          <div class="feature-item">
+            <h4>Service-Tasks</h4>
+            <p>Beliebige Odoo-Modell-Methoden direkt aus BPMN-Prozessen ausführen. Template-Variablen mit ${variable}-Syntax. Fehlerbehandlung: anhalten, überspringen oder wiederholen.</p>
+          </div>
+          <div class="feature-item">
+            <h4>ExclusiveGateway</h4>
+            <p>Bedingungsauswertung über safe_eval mit eingeschränktem Kontext (nur Variablen und datetime). Default-Flow-Unterstützung. Fehlende Variable führt zu Token-Fehler.</p>
+          </div>
+          <div class="feature-item">
+            <h4>Portal-Aufgaben-Inbox</h4>
+            <p>Portal-Controller unter /my/tasks für externe Nutzer:innen. QWeb-Formular-Rendering, Vanilla-JS-Validierung, Zugriffstoken via portal.mixin. Datensatzregeln für Portal-Nutzer:innen.</p>
+          </div>
+          <div class="feature-item">
+            <h4>Prozessdefinitionen &amp; Versionierung</h4>
+            <p>Prozessdefinitionen mit Veröffentlichungs-Workflow und Versions-Pinning. Prozessinstanzen mit Status (Entwurf, laufend, abgeschlossen, angehalten, abgebrochen). Unveränderliche definition_id nach Start.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="detail-section">
+        <h2>Unterstützte BPMN-Elemente</h2>
+        <div class="feature-grid">
+          <div class="feature-item">
+            <h4>Phase 1 — Scope</h4>
+            <p>StartEvent, EndEvent, UserTask, ServiceTask, ExclusiveGateway, SequenceFlow. Vollständige Unterstützung für produktionsreife Automatisierungsprozesse.</p>
+          </div>
+          <div class="feature-item">
+            <h4>Prozessvariablen</h4>
+            <p>flowforge.process.variable speichert Key-Value-Paare pro Prozessinstanz. Variablen stehen in Bedingungen, Service-Tasks und Formularfeldern zur Verfügung.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="container">
+      <div class="detail-section">
+        <h2>Technische Details</h2>
+        <div class="detail-specs">
+          <div class="spec-item">
+            <div class="spec-label">Version</div>
+            <div class="spec-value">19.0.1.0.0</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Odoo</div>
+            <div class="spec-value">19.0</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Lizenz</div>
+            <div class="spec-value">OPL-1</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Preis</div>
+            <div class="spec-value">148 EUR</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Abhängigkeiten</div>
+            <div class="spec-value">praetorx_flowforge, praetorx_base, portal</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Anbieter</div>
+            <div class="spec-value">Syntax &amp; Sabotage</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="detail-section">
+        <h2>Ergänzende Module</h2>
+        <div class="companion-grid">
+          <a href="flowforge-knowledge.html" class="companion-card">
+            <h4>FlowForge Knowledge</h4>
+            <p>BPMN-Diagramme direkt in Knowledge-Artikel einbetten — kostenlos</p>
+          </a>
+          <a href="praetorx-base.html" class="companion-card">
+            <h4>PraetorX Base</h4>
+            <p>Queue-Job-System und Validierungs-Mixins — Pflichtabhängigkeit</p>
+          </a>
+          <a href="modules.html#flowforge" class="companion-card">
+            <h4>FlowForge (Kernmodul)</h4>
+            <p>BPMN-Editor und Diagrammverwaltung — Pflichtabhängigkeit</p>
+          </a>
+          <a href="modules.html#vault" class="companion-card">
+            <h4>Vault</h4>
+            <p>KI-gestützte Dokumentenverwaltung mit automatischen Klassifizierungsworkflows</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-brand-name">PRAETORX</div>
+          <p>Enterprise Module Suite für Odoo 19</p>
+        </div>
+        <div>
+          <h4>Module</h4>
+          <ul>
+            <li><a href="modules.html#vault">Vault</a></li>
+            <li><a href="modules.html#invoice-pro">Invoice Pro</a></li>
+            <li><a href="modules.html#sharepoint-sync">SharePoint Sync</a></li>
+            <li><a href="modules.html#flowforge">FlowForge</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Rechtliches</h4>
+          <ul>
+            <li><a href="impressum.html">Impressum</a></li>
+            <li><a href="datenschutz.html">Datenschutz</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 PraetorX</span>
+        <span class="footer-built">Entwickelt von <a href="https://syntaxandsabotage.io" target="_blank" rel="noopener">Syntax &amp; Sabotage</a></span>
+      </div>
+    </div>
+  </footer>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Scribe — Markdown-zu-HTML-Konvertierung für Odoo Html-Felder mit Live-Vorschau und GitHub Flavored Markdown">
+  <title>Scribe — PraetorX</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">PRAETORX</a>
+      <button class="menu-toggle" aria-label="Menü öffnen" aria-expanded="false">&#9776;</button>
+      <nav aria-label="Hauptnavigation">
+        <a href="index.html">Startseite</a>
+        <a href="modules.html">Module</a>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <div class="lang-toggle">
+          <button class="lang-btn active" data-lang="de" aria-label="Deutsch">DE</button>
+          <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="detail-hero">
+        <img src="assets/images/icon_scribe.png" alt="Scribe" class="detail-hero-icon">
+        <div class="detail-hero-text">
+          <h1>Scribe</h1>
+          <div class="detail-meta">
+            <span class="badge badge-free">Kostenlos</span>
+            <span class="badge badge-tier">Utility</span>
+            <span class="badge" style="background:rgba(255,255,255,0.08);color:#888">v19.0.1.1.11</span>
+            <span class="badge" style="background:rgba(255,255,255,0.08);color:#888">OPL-1</span>
+          </div>
+          <p class="subtitle">Markdown-Unterstützung für jedes Html-Feld in Odoo. Über den Powerbox-Befehl Markdown schreiben, Live-Vorschau sehen und direkt als HTML übernehmen — mit GitHub Flavored Markdown und Code-Syntax-Highlighting.</p>
+          <div class="detail-actions">
+            <a href="https://apps.odoo.com/apps/modules/19.0/scribe/" class="btn btn-primary" target="_blank" rel="noopener">Im Odoo App Store</a>
+            <a href="modules.html" class="btn btn-outline">Alle Module</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="container">
+      <div class="detail-section">
+        <h2>Funktionen</h2>
+        <div class="feature-grid">
+          <div class="feature-item">
+            <h4>Powerbox-Befehl</h4>
+            <p>In jedem Html-Feld "/" tippen und "Markdown" auswählen — öffnet den Scribe-Dialog. Funktioniert in allen Odoo-Modellen ohne zusätzliche Konfiguration.</p>
+          </div>
+          <div class="feature-item">
+            <h4>Live-Vorschau</h4>
+            <p>Vollständiger Wizard-Dialog mit Zwei-Panel-Ansicht: Markdown links eingeben, gerendertes HTML rechts in Echtzeit sehen. Kein Rätselraten über das Endergebnis.</p>
+          </div>
+          <div class="feature-item">
+            <h4>GitHub Flavored Markdown</h4>
+            <p>Vollständige GFM-Unterstützung: Tabellen, Aufgabenlisten mit Checkboxen, umgrenzte Code-Blöcke mit Sprachkennung und alle Standard-Formatierungen.</p>
+          </div>
+          <div class="feature-item">
+            <h4>Code-Syntax-Highlighting</h4>
+            <p>Integration mit Odoos eingebautem Prism.js für farbige Syntax-Hervorhebung in Code-Blöcken. Unterstützt Python, JavaScript, XML und viele weitere Sprachen.</p>
+          </div>
+          <div class="feature-item">
+            <h4>Universelle Unterstützung</h4>
+            <p>Funktioniert auf jedem Html-Feld in jedem Modell — Projektbeschreibungen, Aufgaben, E-Mail-Vorlagen, Wissensdatenbank-Artikel, Produktbeschreibungen.</p>
+          </div>
+          <div class="feature-item">
+            <h4>Mehrsprachig</h4>
+            <p>Benutzeroberfläche verfügbar in Deutsch, Englisch und Französisch. Keine zusätzlichen Übersetzungsschritte notwendig.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="detail-section">
+        <h2>Unterstützte Markdown-Syntax</h2>
+        <div class="feature-grid">
+          <div class="feature-item">
+            <h4>Grundformatierung</h4>
+            <p># H1 bis ###### H6 — Überschriften aller Ebenen. **fett**, *kursiv*, ~~durchgestrichen~~. [Linktext](URL) und ![Alt](Bild-URL).</p>
+          </div>
+          <div class="feature-item">
+            <h4>Listen</h4>
+            <p>Geordnete Listen (1. 2. 3.), ungeordnete Listen (- * +) und Aufgabenlisten mit - [ ] unchecked und - [x] checked.</p>
+          </div>
+          <div class="feature-item">
+            <h4>Code</h4>
+            <p>Code-Blöcke mit ```sprache für Syntax-Highlighting, Inline-Code mit `code`, Blockzitate mit &gt; quote.</p>
+          </div>
+          <div class="feature-item">
+            <h4>Tabellen</h4>
+            <p>GitHub Flavored Markdown-Tabellen mit Spaltenausrichtung (links, zentriert, rechts) — ideal für strukturierte Vergleiche und Übersichten.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="container">
+      <div class="detail-section">
+        <h2>Technische Details</h2>
+        <div class="detail-specs">
+          <div class="spec-item">
+            <div class="spec-label">Version</div>
+            <div class="spec-value">19.0.1.1.11</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Odoo</div>
+            <div class="spec-value">19.0</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Lizenz</div>
+            <div class="spec-value">OPL-1</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Preis</div>
+            <div class="spec-value">Kostenlos</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Abhängigkeiten</div>
+            <div class="spec-value">web, html_editor</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Python-Pakete</div>
+            <div class="spec-value">markdown</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Sprachen</div>
+            <div class="spec-value">DE, EN, FR</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Anbieter</div>
+            <div class="spec-value">Syntax &amp; Sabotage</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="detail-section">
+        <h2>Ergänzende Module</h2>
+        <div class="companion-grid">
+          <a href="foundation.html" class="companion-card">
+            <h4>Foundation</h4>
+            <p>Kern-Services-Schicht — Pflichtbasis für die PraetorX Suite</p>
+          </a>
+          <a href="flowforge-knowledge.html" class="companion-card">
+            <h4>FlowForge Knowledge</h4>
+            <p>BPMN-Diagramme in Knowledge-Artikel einbetten — kostenlos</p>
+          </a>
+          <a href="praetorx-base.html" class="companion-card">
+            <h4>PraetorX Base</h4>
+            <p>Technische Basismuster: Queue-Jobs und Validierungs-Mixins</p>
+          </a>
+          <a href="modules.html#vault" class="companion-card">
+            <h4>Vault</h4>
+            <p>KI-gestützte Dokumentenverwaltung mit Rich-Text-Feldern</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-brand-name">PRAETORX</div>
+          <p>Enterprise Module Suite für Odoo 19</p>
+        </div>
+        <div>
+          <h4>Module</h4>
+          <ul>
+            <li><a href="modules.html#vault">Vault</a></li>
+            <li><a href="modules.html#invoice-pro">Invoice Pro</a></li>
+            <li><a href="modules.html#sharepoint-sync">SharePoint Sync</a></li>
+            <li><a href="modules.html#flowforge">FlowForge</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Rechtliches</h4>
+          <ul>
+            <li><a href="impressum.html">Impressum</a></li>
+            <li><a href="datenschutz.html">Datenschutz</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 PraetorX</span>
+        <span class="footer-built">Entwickelt von <a href="https://syntaxandsabotage.io" target="_blank" rel="noopener">Syntax &amp; Sabotage</a></span>
+      </div>
+    </div>
+  </footer>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

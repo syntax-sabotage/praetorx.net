@@ -72,7 +72,7 @@
           "name": "FlowForge Engine",
           "applicationCategory": "BusinessApplication",
           "operatingSystem": "Odoo 19",
-          "offers": {"@type": "Offer", "price": "99.00", "priceCurrency": "EUR"},
+          "offers": {"@type": "Offer", "price": "148.00", "priceCurrency": "EUR"},
           "url": "https://apps.odoo.com/apps/modules/19.0/praetorx_flowforge_engine/"
         }
       },
@@ -120,7 +120,7 @@
           "name": "Mimik Ingest",
           "applicationCategory": "BusinessApplication",
           "operatingSystem": "Odoo 19",
-          "offers": {"@type": "Offer", "price": "49.00", "priceCurrency": "EUR"},
+          "offers": {"@type": "Offer", "price": "248.00", "priceCurrency": "EUR"},
           "url": "https://apps.odoo.com/apps/modules/19.0/nexumis_mimik_ingest/"
         }
       },
@@ -212,12 +212,24 @@
       <h2 class="tier-heading" data-i18n="tier.premium">Premium</h2>
       <div class="card-grid">
 
+        <div class="card fade-in" id="mimik-ingest">
+          <span class="badge badge-price card-price">248 EUR</span>
+          <img src="assets/images/icon_mimik_ingest.png" alt="Mimik Ingest" class="card-icon" loading="lazy">
+          <h3>Mimik Ingest</h3>
+          <p data-i18n="mod.mimik_ingest">SharePoint-API-kompatibler Endpunkt für Scanner und Multifunktionsgeräte — Dokumente direkt in Odoo erfassen.</p>
+          <div class="card-footer">
+            <a href="mimik-ingest.html" class="btn btn-sm btn-primary" data-i18n="mod.details">Details</a>
+            <a href="https://apps.odoo.com/apps/modules/19.0/nexumis_mimik_ingest/" class="btn btn-sm btn-outline" target="_blank" rel="noopener" data-i18n="mod.appstore">Im App Store</a>
+          </div>
+        </div>
+
         <div class="card fade-in" id="vault">
+          <span class="badge badge-price card-price">199 EUR</span>
           <img src="assets/images/icon_vault.png" alt="Vault" class="card-icon" loading="lazy">
           <h3>Vault</h3>
           <p data-i18n="mod.vault">KI-gestütztes Dokumentenmanagement mit automatischer Klassifizierung, intelligentem Routing, OCR und ISO-27001-konformen Sicherheitsstufen.</p>
           <div class="card-footer">
-            <span class="badge badge-price">199 EUR</span>
+            <a href="vault.html" class="btn btn-sm btn-primary" data-i18n="mod.details">Details</a>
             <a href="https://apps.odoo.com/apps/modules/19.0/praetorx_vault/" class="btn btn-sm btn-outline" target="_blank" rel="noopener" data-i18n="mod.appstore">Im App Store</a>
           </div>
         </div>
@@ -229,31 +241,34 @@
       <div class="card-grid">
 
         <div class="card fade-in" id="sharepoint-sync">
+          <span class="badge badge-price card-price">99 EUR</span>
           <img src="assets/images/icon_sharepoint_sync.png" alt="SharePoint Sync" class="card-icon" loading="lazy">
           <h3>SharePoint Sync</h3>
           <p data-i18n="mod.sharepoint_sync">Bidirektionale Synchronisation zwischen Odoo Documents und SharePoint/OneDrive über die Microsoft Graph API.</p>
           <div class="card-footer">
-            <span class="badge badge-price">99 EUR</span>
+            <a href="sharepoint-sync.html" class="btn btn-sm btn-primary" data-i18n="mod.details">Details</a>
             <a href="https://apps.odoo.com/apps/modules/19.0/sharepoint_sync/" class="btn btn-sm btn-outline" target="_blank" rel="noopener" data-i18n="mod.appstore">Im App Store</a>
           </div>
         </div>
 
         <div class="card fade-in" id="nextcloud-sync">
+          <span class="badge badge-price card-price">99 EUR</span>
           <img src="assets/images/icon_nextcloud_sync.png" alt="Nextcloud Sync" class="card-icon" loading="lazy">
           <h3>Nextcloud Sync</h3>
           <p data-i18n="mod.nextcloud_sync">Bidirektionale Synchronisation zwischen Odoo Documents und Nextcloud — Bibliotheken, Ordner und Dateien automatisch abgleichen.</p>
           <div class="card-footer">
-            <span class="badge badge-price">99 EUR</span>
+            <a href="nextcloud-sync.html" class="btn btn-sm btn-primary" data-i18n="mod.details">Details</a>
             <a href="https://apps.odoo.com/apps/modules/19.0/praetorx_nextcloud_sync/" class="btn btn-sm btn-outline" target="_blank" rel="noopener" data-i18n="mod.appstore">Im App Store</a>
           </div>
         </div>
 
         <div class="card fade-in" id="flowforge-engine">
+          <span class="badge badge-price card-price">148 EUR</span>
           <img src="assets/images/icon_flowforge_engine.png" alt="FlowForge Engine" class="card-icon" loading="lazy">
           <h3>FlowForge Engine</h3>
           <p data-i18n="mod.flowforge_engine">Ausführungs-Engine für BPMN-Prozesse — Aufgaben, Timer, Gateways und Ereignisse automatisch in Odoo-Aktionen umsetzen.</p>
           <div class="card-footer">
-            <span class="badge badge-price">99 EUR</span>
+            <a href="flowforge-engine.html" class="btn btn-sm btn-primary" data-i18n="mod.details">Details</a>
             <a href="https://apps.odoo.com/apps/modules/19.0/praetorx_flowforge_engine/" class="btn btn-sm btn-outline" target="_blank" rel="noopener" data-i18n="mod.appstore">Im App Store</a>
           </div>
         </div>
@@ -265,11 +280,12 @@
       <div class="card-grid">
 
         <div class="card fade-in" id="mcp-security">
+          <span class="badge badge-price card-price">79 EUR</span>
           <img src="assets/images/icon_mcp_security.png" alt="MCP Security" class="card-icon" loading="lazy">
           <h3>MCP Security</h3>
           <p data-i18n="mod.mcp_security">Model Context Protocol — Sicherheit und Zugriffskontrolle für KI-gestützte Odoo-Integrationen.</p>
           <div class="card-footer">
-            <span class="badge badge-price">79 EUR</span>
+            <a href="mcp-security.html" class="btn btn-sm btn-primary" data-i18n="mod.details">Details</a>
             <a href="https://apps.odoo.com/apps/modules/19.0/praetorx_security/" class="btn btn-sm btn-outline" target="_blank" rel="noopener" data-i18n="mod.appstore">Im App Store</a>
           </div>
         </div>
@@ -281,32 +297,24 @@
       <div class="card-grid">
 
         <div class="card fade-in" id="invoice-pro">
+          <span class="badge badge-price card-price">49 EUR</span>
           <img src="assets/images/icon_invoice_pro.png" alt="Invoice Pro" class="card-icon" loading="lazy">
           <h3>Invoice Pro</h3>
           <p data-i18n="mod.invoice_pro">KI-gestützte Rechnungsverarbeitung mit automatischer Datenextraktion, Validierung und nahtloser Odoo-Buchhaltungsintegration.</p>
           <div class="card-footer">
-            <span class="badge badge-price">49 EUR</span>
+            <a href="invoice-pro.html" class="btn btn-sm btn-primary" data-i18n="mod.details">Details</a>
             <a href="https://apps.odoo.com/apps/modules/19.0/invoice_pro/" class="btn btn-sm btn-outline" target="_blank" rel="noopener" data-i18n="mod.appstore">Im App Store</a>
           </div>
         </div>
 
         <div class="card fade-in" id="flowforge">
+          <span class="badge badge-price card-price">49 EUR</span>
           <img src="assets/images/icon_flowforge.png" alt="FlowForge" class="card-icon" loading="lazy">
           <h3>FlowForge</h3>
           <p data-i18n="mod.flowforge">BPMN-2.0-Prozessdesigner mit visuellem Form Builder — Geschäftsprozesse direkt in Odoo modellieren.</p>
           <div class="card-footer">
-            <span class="badge badge-price">49 EUR</span>
+            <a href="flowforge.html" class="btn btn-sm btn-primary" data-i18n="mod.details">Details</a>
             <a href="https://apps.odoo.com/apps/modules/19.0/praetorx_flowforge/" class="btn btn-sm btn-outline" target="_blank" rel="noopener" data-i18n="mod.appstore">Im App Store</a>
-          </div>
-        </div>
-
-        <div class="card fade-in" id="mimik-ingest">
-          <img src="assets/images/icon_mimik_ingest.png" alt="Mimik Ingest" class="card-icon" loading="lazy">
-          <h3>Mimik Ingest</h3>
-          <p data-i18n="mod.mimik_ingest">SharePoint-API-kompatibler Endpunkt für Scanner und Multifunktionsgeräte — Dokumente direkt in Odoo erfassen.</p>
-          <div class="card-footer">
-            <span class="badge badge-price">49 EUR</span>
-            <a href="https://apps.odoo.com/apps/modules/19.0/nexumis_mimik_ingest/" class="btn btn-sm btn-outline" target="_blank" rel="noopener" data-i18n="mod.appstore">Im App Store</a>
           </div>
         </div>
 
@@ -317,41 +325,45 @@
       <div class="card-grid">
 
         <div class="card fade-in" id="foundation">
+          <span class="badge badge-free card-price" data-i18n="mod.free">Kostenlos</span>
           <img src="assets/images/icon_foundation.png" alt="Foundation" class="card-icon" loading="lazy">
           <h3>Foundation</h3>
           <p data-i18n="mod.foundation">Zentrale Infrastruktur — einheitliche KI-Provider (OpenAI, Claude, Azure), Konfiguration, Health-Monitoring und Sicherheits-Framework.</p>
           <div class="card-footer">
-            <span class="badge badge-free" data-i18n="mod.free">Kostenlos</span>
+            <a href="foundation.html" class="btn btn-sm btn-primary" data-i18n="mod.details">Details</a>
             <a href="https://apps.odoo.com/apps/modules/19.0/foundation/" class="btn btn-sm btn-outline" target="_blank" rel="noopener" data-i18n="mod.appstore">Im App Store</a>
           </div>
         </div>
 
         <div class="card fade-in" id="praetorx-base">
+          <span class="badge badge-free card-price" data-i18n="mod.free">Kostenlos</span>
           <img src="assets/images/icon_praetorx_base.png" alt="PraetorX Base" class="card-icon" loading="lazy">
           <h3>PraetorX Base</h3>
           <p data-i18n="mod.praetorx_base">Queue Jobs, Validierungs-Framework und Batch Processing — gemeinsame Infrastruktur für Cloud-Integrationsmodule.</p>
           <div class="card-footer">
-            <span class="badge badge-free" data-i18n="mod.free">Kostenlos</span>
+            <a href="praetorx-base.html" class="btn btn-sm btn-primary" data-i18n="mod.details">Details</a>
             <a href="https://apps.odoo.com/apps/modules/19.0/praetorx_base/" class="btn btn-sm btn-outline" target="_blank" rel="noopener" data-i18n="mod.appstore">Im App Store</a>
           </div>
         </div>
 
         <div class="card fade-in" id="scribe">
+          <span class="badge badge-free card-price" data-i18n="mod.free">Kostenlos</span>
           <img src="assets/images/icon_scribe.png" alt="Scribe" class="card-icon" loading="lazy">
           <h3>Scribe</h3>
           <p data-i18n="mod.scribe">Markdown-zu-HTML-Konvertierung für jedes Odoo-HTML-Feld. Powerbox-Befehl, Assistent mit Live-Vorschau, GitHub Flavored Markdown.</p>
           <div class="card-footer">
-            <span class="badge badge-free" data-i18n="mod.free">Kostenlos</span>
+            <a href="scribe.html" class="btn btn-sm btn-primary" data-i18n="mod.details">Details</a>
             <a href="https://apps.odoo.com/apps/modules/19.0/scribe/" class="btn btn-sm btn-outline" target="_blank" rel="noopener" data-i18n="mod.appstore">Im App Store</a>
           </div>
         </div>
 
         <div class="card fade-in" id="flowforge-knowledge">
+          <span class="badge badge-free card-price" data-i18n="mod.free">Kostenlos</span>
           <img src="assets/images/icon_flowforge_knowledge.png" alt="FlowForge Knowledge" class="card-icon" loading="lazy">
           <h3>FlowForge Knowledge</h3>
           <p data-i18n="mod.flowforge_knowledge">BPMN-Diagramme in Odoo Knowledge-Artikeln einbetten — Prozessdokumentation direkt in der Wissensdatenbank.</p>
           <div class="card-footer">
-            <span class="badge badge-free" data-i18n="mod.free">Kostenlos</span>
+            <a href="flowforge-knowledge.html" class="btn btn-sm btn-primary" data-i18n="mod.details">Details</a>
             <a href="https://apps.odoo.com/apps/modules/19.0/praetorx_flowforge_knowledge/" class="btn btn-sm btn-outline" target="_blank" rel="noopener" data-i18n="mod.appstore">Im App Store</a>
           </div>
         </div>

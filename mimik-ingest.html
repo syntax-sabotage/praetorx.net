@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mimik Ingest — SharePoint API-Kompatibilität für Drucker und Scanner. Scans von HP MFP direkt in Vault DMS einliefern, ohne manuelle Upload-Workflows.">
+  <title>Mimik Ingest — PraetorX</title>
+
+  <link rel="canonical" href="https://praetorx.net/mimik-ingest.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="PraetorX">
+  <meta property="og:title" content="Mimik Ingest — Drucker direkt in Vault DMS">
+  <meta property="og:description" content="SharePoint-kompatible REST API für Drucker und Scanner. HP MFP scannt direkt in Odoo Vault — mit KI-Verarbeitung und Audit-Trail.">
+  <meta property="og:url" content="https://praetorx.net/mimik-ingest.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">PRAETORX</a>
+      <button class="menu-toggle" aria-label="Menü öffnen" aria-expanded="false">&#9776;</button>
+      <nav aria-label="Hauptnavigation">
+        <a href="index.html">Startseite</a>
+        <a href="modules.html" class="active">Module</a>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <div class="lang-toggle">
+          <button class="lang-btn active" data-lang="de" aria-label="Deutsch">DE</button>
+          <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Detail Hero -->
+  <section>
+    <div class="container">
+      <div class="detail-hero">
+        <img src="assets/images/icon_mimik_ingest.png" alt="Mimik Ingest" class="detail-hero-icon">
+        <div class="detail-hero-text">
+          <h1>Mimik Ingest</h1>
+          <div class="detail-meta">
+            <span class="badge badge-price">248 EUR</span>
+            <span class="badge badge-tier">Enterprise</span>
+            <span class="badge" style="background:rgba(255,255,255,0.08);color:var(--text-muted)">v19.0.1.0.11</span>
+            <span class="badge" style="background:rgba(255,255,255,0.08);color:var(--text-muted)">OPL-1</span>
+          </div>
+          <p class="subtitle">Jeden SharePoint-kompatiblen Drucker oder Multifunktionsdrucker in eine Odoo-Dokumentenquelle verwandeln. Dokumente fließen direkt vom HP-Drucker in Vault DMS — mit automatischer KI-Verarbeitung, strukturierter Benennung und vollständigem Audit-Trail.</p>
+          <div class="detail-actions">
+            <a href="https://apps.odoo.com/apps/modules/19.0/nexumis_mimik_ingest/" class="btn btn-primary" target="_blank" rel="noopener">Im Odoo App Store</a>
+            <a href="modules.html" class="btn btn-outline">Alle Module</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="alt">
+    <div class="container">
+      <div class="detail-section">
+        <h2>Funktionen</h2>
+        <div class="feature-grid">
+          <div class="feature-item">
+            <h4>HP MFP-kompatibel</h4>
+            <p>Funktioniert mit HP-Druckern, die SharePoint-Integration unterstützen. Einfach die API-URL als SharePoint-Ziel konfigurieren — kein Zusatz-Client erforderlich.</p>
+          </div>
+          <div class="feature-item">
+            <h4>Direkter Scan-to-DMS-Workflow</h4>
+            <p>Ingest Source anlegen, Zielordner konfigurieren, URL im Drucker eintragen und "Scan to SharePoint" drücken. Dokumente erscheinen automatisch in Vault mit KI-generierten Namen.</p>
+          </div>
+          <div class="feature-item">
+            <h4>Automatische KI-Verarbeitung</h4>
+            <p>Eingescannte Dokumente durchlaufen automatisch die Vault-KI-Pipeline: Klassifizierung, OCR und intelligente Umbenennung nach dem Schema INB-YYYYMMDD-NNNN.pdf.</p>
+          </div>
+          <div class="feature-item">
+            <h4>Enterprise-Sicherheit</h4>
+            <p>Basic-Authentifizierung pro Ingest Source. IP-Whitelist-Unterstützung. Rate Limiting (5 Versuche / 15 Minuten) und 1-Stunde-Sperrung nach Fehlversuchen.</p>
+          </div>
+          <div class="feature-item">
+            <h4>Dateivalidierung</h4>
+            <p>50 MB Dateigrößenlimit. Whitelist für erlaubte Dateiendungen. Kein versehentliches Einliefern unsicherer Dateitypen.</p>
+          </div>
+          <div class="feature-item">
+            <h4>Vollständiger Audit-Trail</h4>
+            <p>Alle Uploads werden protokolliert — mit Zeitstempel, Quelldrucker, Zielordner und Verarbeitungsstatus. Keine sensiblen Fehlermeldungen an den Client.</p>
+          </div>
+          <div class="feature-item">
+            <h4>Mehrere Ingest Sources</h4>
+            <p>Verschiedene Drucker und Scanner jeweils mit eigenen Zugangsdaten und Zielordnern konfigurieren. Jede Quelle ist unabhängig und isoliert.</p>
+          </div>
+          <div class="feature-item">
+            <h4>Strukturierte Benennung</h4>
+            <p>Eingescannte Dokumente erhalten automatisch strukturierte Namen nach dem Schema INB-YYYYMMDD-NNNN.pdf — bevor die Vault-KI die finale Klassifizierungsbenennung übernimmt.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section>
+    <div class="container">
+      <div class="detail-section">
+        <h2>So funktioniert es</h2>
+        <div class="detail-specs">
+          <div class="spec-item">
+            <div class="spec-label">Schritt 1</div>
+            <div class="spec-value">Ingest Source anlegen</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Schritt 2</div>
+            <div class="spec-value">Drucker konfigurieren</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Schritt 3</div>
+            <div class="spec-value">Dokumente scannen</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Schritt 4</div>
+            <div class="spec-value">Automatische KI-Verarbeitung</div>
+          </div>
+        </div>
+        <p style="margin-top: 24px; color: var(--text-muted); font-size: 0.9375rem;">
+          Drucker-URL-Format: <code style="background: var(--bg-card); padding: 2px 8px; border-radius: 4px; color: var(--accent); font-size: 0.875rem;">https://ihr-odoo.de/_api/sites/docs/Inbox</code>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Specs -->
+  <section class="alt">
+    <div class="container">
+      <div class="detail-section">
+        <h2>Technische Details</h2>
+        <div class="detail-specs">
+          <div class="spec-item">
+            <div class="spec-label">Version</div>
+            <div class="spec-value">19.0.1.0.11</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Lizenz</div>
+            <div class="spec-value">OPL-1</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Preis</div>
+            <div class="spec-value">248 EUR</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Odoo</div>
+            <div class="spec-value">19.0</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Abhängigkeiten</div>
+            <div class="spec-value">praetorx_vault, documents</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Kategorie</div>
+            <div class="spec-value">Productivity</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Companion Modules -->
+  <section>
+    <div class="container">
+      <div class="detail-section">
+        <h2>Ergänzende Module</h2>
+        <div class="companion-grid">
+          <a href="vault.html" class="companion-card">
+            <h4>Vault</h4>
+            <p>Pflichtabhängigkeit — Mimik Ingest liefert direkt in Vault DMS ein.</p>
+          </a>
+          <a href="invoice-pro.html" class="companion-card">
+            <h4>Invoice Pro</h4>
+            <p>Gescannte Rechnungen landen direkt in der KI-Verarbeitungswarteschlange.</p>
+          </a>
+          <a href="sharepoint-sync.html" class="companion-card">
+            <h4>SharePoint Sync</h4>
+            <p>Eingescannte Dokumente automatisch nach SharePoint weiterleiten.</p>
+          </a>
+          <a href="nextcloud-sync.html" class="companion-card">
+            <h4>Nextcloud Sync</h4>
+            <p>Eingescannte Dokumente automatisch nach Nextcloud weiterleiten.</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-brand-name">PRAETORX</div>
+          <p>Enterprise Module Suite für Odoo 19</p>
+        </div>
+        <div>
+          <h4>Module</h4>
+          <ul>
+            <li><a href="vault.html">Vault</a></li>
+            <li><a href="invoice-pro.html">Invoice Pro</a></li>
+            <li><a href="sharepoint-sync.html">SharePoint Sync</a></li>
+            <li><a href="flowforge.html">FlowForge</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Rechtliches</h4>
+          <ul>
+            <li><a href="impressum.html">Impressum</a></li>
+            <li><a href="datenschutz.html">Datenschutz</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 PraetorX</span>
+        <span class="footer-built">Entwickelt von <a href="https://syntaxandsabotage.io" target="_blank" rel="noopener">Syntax &amp; Sabotage</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

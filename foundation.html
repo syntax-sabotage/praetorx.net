@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Foundation — Kern-Services-Schicht für die PraetorX Business Suite: AI-Provider, Sicherheit, Konfigurationsmanagement">
+  <title>Foundation — PraetorX</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">PRAETORX</a>
+      <button class="menu-toggle" aria-label="Menü öffnen" aria-expanded="false">&#9776;</button>
+      <nav aria-label="Hauptnavigation">
+        <a href="index.html">Startseite</a>
+        <a href="modules.html">Module</a>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <div class="lang-toggle">
+          <button class="lang-btn active" data-lang="de" aria-label="Deutsch">DE</button>
+          <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="detail-hero">
+        <img src="assets/images/icon_foundation.png" alt="Foundation" class="detail-hero-icon">
+        <div class="detail-hero-text">
+          <h1>Foundation</h1>
+          <div class="detail-meta">
+            <span class="badge badge-free">Kostenlos</span>
+            <span class="badge badge-tier">Core</span>
+            <span class="badge" style="background:rgba(255,255,255,0.08);color:#888">v19.0.1.4.0</span>
+            <span class="badge" style="background:rgba(255,255,255,0.08);color:#888">OPL-1</span>
+          </div>
+          <p class="subtitle">Die Kern-Services-Schicht für alle PraetorX Suite-Module. Vereinheitlichte KI-Integration, API-Schlüsselverschlüsselung, zentrale Konfigurationsmuster und ein Wizard-Framework — alles an einem Ort.</p>
+          <div class="detail-actions">
+            <a href="https://apps.odoo.com/apps/modules/19.0/foundation/" class="btn btn-primary" target="_blank" rel="noopener">Im Odoo App Store</a>
+            <a href="modules.html" class="btn btn-outline">Alle Module</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="container">
+      <div class="detail-section">
+        <h2>Funktionen</h2>
+        <div class="feature-grid">
+          <div class="feature-item">
+            <h4>KI-Provider-Verwaltung</h4>
+            <p>Vereinheitlichte Abstraktionsschicht für OpenAI (GPT-4, GPT-4o, GPT-3.5), Anthropic Claude (Opus, Sonnet, Haiku), Azure OpenAI und lokale LLMs (Ollama, LM Studio). Eine Konfiguration, mehrere Anbieter.</p>
+          </div>
+          <div class="feature-item">
+            <h4>Verbindungstest &amp; Health-Checks</h4>
+            <p>Direkt in den Einstellungen: Verbindungen testen, Erreichbarkeit prüfen, Token-Nutzung verfolgen und Modell-Fähigkeiten erkennen. Automatisches Failover zwischen Anbietern.</p>
+          </div>
+          <div class="feature-item">
+            <h4>API-Schlüsselverschlüsselung</h4>
+            <p>Enterprise-grade Verschlüsselung mit Fernet + PBKDF2. Schlüssel werden niemals im Klartext gespeichert. Sicherheitsmuster direkt in der Foundation verankert.</p>
+          </div>
+          <div class="feature-item">
+            <h4>Einstellungsmuster</h4>
+            <p>Zentrale Konfiguration in den allgemeinen Einstellungen. Einheitliche UX über alle Suite-Module hinweg. Konsistente Darstellung und Bedienung für Systemadministrator:innen.</p>
+          </div>
+          <div class="feature-item">
+            <h4>KI-Consumer-Mixin</h4>
+            <p>Jedes Odoo-Modell kann mit einer einzigen Vererbungszeile KI-fähig werden: _inherit = ['mail.thread', 'foundation.ai.consumer']. Vollständige KI-Abfragen über self._ai_complete().</p>
+          </div>
+          <div class="feature-item">
+            <h4>Wizard-Framework</h4>
+            <p>Mehrstufige Wizards mit Foundation-Branding: Dark-Mode-Unterstützung, responsive Layouts, Fortschrittsanzeigen und konsistentes Styling für alle Suite-Module.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="detail-section">
+        <h2>Unterstützte KI-Anbieter</h2>
+        <div class="feature-grid">
+          <div class="feature-item">
+            <h4>OpenAI</h4>
+            <p>GPT-4, GPT-4o, GPT-3.5 Turbo — vollständige Modellunterstützung mit Streaming und Function Calling.</p>
+          </div>
+          <div class="feature-item">
+            <h4>Anthropic Claude</h4>
+            <p>Claude Opus, Sonnet und Haiku — optimiert für komplexe Analyse- und Dokumentenverarbeitungsaufgaben.</p>
+          </div>
+          <div class="feature-item">
+            <h4>Azure OpenAI</h4>
+            <p>Azure OpenAI Service mit Enterprise-Compliance, regionaler Datenhaltung und SLA-Garantien.</p>
+          </div>
+          <div class="feature-item">
+            <h4>Lokale LLMs</h4>
+            <p>Ollama und LM Studio für vollständig lokale KI-Verarbeitung ohne Cloud-Abhängigkeit. DSGVO-konform.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="container">
+      <div class="detail-section">
+        <h2>Technische Details</h2>
+        <div class="detail-specs">
+          <div class="spec-item">
+            <div class="spec-label">Version</div>
+            <div class="spec-value">19.0.1.4.0</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Odoo</div>
+            <div class="spec-value">19.0</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Lizenz</div>
+            <div class="spec-value">OPL-1</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Preis</div>
+            <div class="spec-value">Kostenlos</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Abhängigkeiten</div>
+            <div class="spec-value">base, mail</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Python-Pakete</div>
+            <div class="spec-value">cryptography, requests</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Sprachen</div>
+            <div class="spec-value">DE, EN, FR</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Anbieter</div>
+            <div class="spec-value">Syntax &amp; Sabotage</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="detail-section">
+        <h2>Ergänzende Module</h2>
+        <div class="companion-grid">
+          <a href="modules.html#vault" class="companion-card">
+            <h4>Vault</h4>
+            <p>KI-gestützte Dokumentenverwaltung — nutzt Foundation KI-Provider</p>
+          </a>
+          <a href="scribe.html" class="companion-card">
+            <h4>Scribe</h4>
+            <p>Markdown-zu-HTML-Konvertierung für Odoo Html-Felder — kostenlos</p>
+          </a>
+          <a href="praetorx-base.html" class="companion-card">
+            <h4>PraetorX Base</h4>
+            <p>Queue-Jobs, Validierungs-Mixins und OWL-Komponenten — kostenlos</p>
+          </a>
+          <a href="mcp-security.html" class="companion-card">
+            <h4>MCP Security</h4>
+            <p>API-Schlüsselverwaltung und Audit-Logging für MCP-Endpunkte</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-brand-name">PRAETORX</div>
+          <p>Enterprise Module Suite für Odoo 19</p>
+        </div>
+        <div>
+          <h4>Module</h4>
+          <ul>
+            <li><a href="modules.html#vault">Vault</a></li>
+            <li><a href="modules.html#invoice-pro">Invoice Pro</a></li>
+            <li><a href="modules.html#sharepoint-sync">SharePoint Sync</a></li>
+            <li><a href="modules.html#flowforge">FlowForge</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Rechtliches</h4>
+          <ul>
+            <li><a href="impressum.html">Impressum</a></li>
+            <li><a href="datenschutz.html">Datenschutz</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 PraetorX</span>
+        <span class="footer-built">Entwickelt von <a href="https://syntaxandsabotage.io" target="_blank" rel="noopener">Syntax &amp; Sabotage</a></span>
+      </div>
+    </div>
+  </footer>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
